@@ -14,7 +14,7 @@ const Login = () => {
     try {
       const response = await loginApiConnection(values);
       if (response.status === 200) {
-
+        navigate('/tasks')
       }
     } catch (error) {
       setModalType("Failure");
